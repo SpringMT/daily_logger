@@ -4,10 +4,11 @@ source 'https://rubygems.org'
 gemspec
 
 group :test do
+  gem 'bundler'
+  gem 'rake'
+  gem 'coveralls', require: false
   gem 'rspec'
-  gem 'rspec-core'
   gem 'timecop'
   gem 'parallel'
-  gem 'rake'
 end
 
