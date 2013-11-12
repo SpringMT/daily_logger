@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.authors       = ["Spring_MT"]
   gem.email         = ["today.is.sky.blue.sky@gmail.com"]
   gem.description   = %q{Write a gem description}
-  gem.summary       = %q{Write a gem summary}
-  gem.homepage      = ""
+  gem.summary       = %q{daily lotate logger}
+  gem.homepage      = "https://github.com/SpringMT/daily_logger"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
