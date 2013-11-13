@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/SpringMT/daily_logger.png)](https://travis-ci.org/SpringMT/daily_logger)
 [![Coverage Status](https://coveralls.io/repos/SpringMT/daily_logger/badge.png)](https://coveralls.io/r/SpringMT/daily_logger)
 
+* Yet Another Logger for ruby
 * daily lotate logger
 
 ## Installation
