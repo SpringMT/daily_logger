@@ -2,6 +2,7 @@
 
 require File.dirname(__FILE__) + '/spec_helper'
 require 'daily_logger'
+require 'fileutils'
 
 describe DailyLogger do
   let(:default_instance) { described_class.new }
@@ -15,17 +16,7 @@ describe DailyLogger do
   end
 
   after do
-    # サブディレクトリを階層が深い順にソートした配列を作成
-    dirlist = Dir::glob(log_dir + "**/").sort do |a,b|
-      b.split('/').size <=> a.split('/').size
-    end
-
-    dirlist.each do |d|
-      Dir::foreach(d) do |f|
-        File::delete(d+f) if ! (/\.+$/ =~ f)
-      end
-      Dir::rmdir(d)
-    end
+    FileUtils.rm_rf log_dir
     Timecop.return
   end
 
