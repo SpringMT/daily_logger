@@ -11,8 +11,8 @@ describe DailyLogger do
   let(:now)       {Time.now.strftime "%Y/%m/%d %H:%M:%S"}
 
   before do
-    Dir.mkdir(log_dir)
-    Timecop.freeze(Time.now)
+    Dir.mkdir log_dir
+    Timecop.freeze Time.now
   end
 
   after do
